@@ -27,8 +27,8 @@ public class FeatureDBContext extends DBContext {
                 + "  FROM [FeatureUrl] fu JOIN PermissionsFeatureUrl pf on fu.fid = pf.fid\n"
                 + "					   JOIN [Permissions] p on pf.pid = p.permission_id\n"
                 + "	WHERE [url] = ? AND p.permission_id = ?";
-        try {
-            PreparedStatement stm = connection.prepareStatement(sql);
+        try(PreparedStatement stm = connection.prepareStatement(sql)) {
+            
             stm.setString(1, url);
             stm.setInt(2, user.getPermissionID());
             ResultSet rs = stm.executeQuery();
