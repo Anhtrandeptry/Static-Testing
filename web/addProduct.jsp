@@ -9,6 +9,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+<title>Add Product</title>
     <style>
         body {
             font-family: Arial, sans-serif;
