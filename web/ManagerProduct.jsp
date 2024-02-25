@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <table class="table table-striped table-hover">
+                <table class="table table-striped table-hover"><!-- Start Manage Product List -->
                     <thead>
                         <tr>
                             <th>
